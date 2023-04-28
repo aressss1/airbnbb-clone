@@ -29,7 +29,7 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
             toast.success('Reservatio Cancelled')
             router.refresh()
         })
-        .catch((error) => {
+        .catch(() => {
             toast.error("Something went wrong.")
         })
         .finally(() => {
