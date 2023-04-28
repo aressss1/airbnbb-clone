@@ -79,6 +79,8 @@ const SearchModal = () => {
         query: updatedQuery,
       } , { skipNull: true })
       
+      setStep(STEPS.LOCATION)
+      searchModal.onClose()
       router.push(url)
     } ,[
       step , searchModal , location , router ,guestCount , roomCount , bathroomCount , dateRange , onNext , params
